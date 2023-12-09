@@ -72,6 +72,7 @@ public class Movement : MonoBehaviour
 
         idleStatus = leftIdle;
         spriteRenderer.sprite = idleStatus;
+        spriteRenderer.sortingOrder = 2;
 
     }
 
@@ -382,6 +383,7 @@ public class Movement : MonoBehaviour
             {
                 spriteIndex = 0;
             }
+            spriteRenderer.sortingOrder = 2;
             spriteRenderer.sprite = spriteWalk[spriteIndex];
             spriteTimer = 0;
         }

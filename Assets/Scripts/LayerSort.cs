@@ -20,14 +20,14 @@ public class LayerSort : MonoBehaviour
     {
         // Player will go above a sprite.
 
-        if(movement != null && movement.transform.position.y > transform.position.y - 1)
+        if (movement != null && movement.transform.position.y > transform.position.y - 1)
         {
             sprite.sortingOrder = 2;
         }
         else
         {
             // Player will go behind a sprite.
-            sprite.sortingOrder = 0;
+            sprite.sortingOrder = 1;
         }
     }
 }
